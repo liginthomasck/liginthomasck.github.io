@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ligin Thomas CK</title>
+    <link rel="stylesheet" href="Moon-parallax-effect.css">
+    <link rel="stylesheet" href="Cloud-effect-parallax.css">
+
+</head>
+
+<body>
+
+    <!------ Moon parallax effect ------>
+    <section id="Moon-parallax-effect">
+        <section id="section">
+            <img src="moon/bg.jpg" id="bg">
+            <img src="moon/moon.png" id="moon">
+            <img src="moon/mountain.png" id="mountain">
+            <img src="moon/road.png" id="road">
+            <h2 id="text">Heii.. Bie.. !!</h2>
+        </section>
+
+        <section class="section white">
+            <h2>Oops!!.. <br> Site Under Maintenance..!!</h2>
+        </section>
+
+        <!------ Cloud effect parallax ------>
+        <section id="Cloud-effect-parallax">
+            <div class="banner">
+                <div class="clouds">
+                    <img src="cloud/cloud1.png" style="--i:1;">
+                    <img src="cloud/cloud2.png" style="--i:2;">
+                    <img src="cloud/cloud3.png" style="--i:3;">
+                    <img src="cloud/cloud4.png" style="--i:4;">
+                    <img src="cloud/cloud5.png" style="--i:5;">
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+
+    <script src="./vendor/particles.js/particles.js"></script>
+    <script src="./vendor/gsap/gsap.min.js"></script>
+    <script src="./outerSpace.js"></script>
+
+    <!------ Moon parallax effect ------>
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function() {
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+        })
+    </script>
+</body>
