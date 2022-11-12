@@ -1,4 +1,3 @@
-This is a Brave Rewards publisher verification file.
 
 Domain: liginthomasck.tk
 Token: 90eeb50882bcf56f319298a7dacd18604f8df9e01b4d01354d840862fedb9a39
