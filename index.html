@@ -1,73 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ligin Thomas CK</title>
-    <link rel="stylesheet" href="Moon-parallax-effect.css">
-    <link rel="stylesheet" href="Cloud-effect-parallax.css">
-       <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-454HWPKYFC"></script>
-    
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-454HWPKYFC');
-</script>
+    <title>Ligin Thomas CK - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
-<script type="text/javascript">
-particlesJS("particles-js", {"particles":{"number":{"value":60,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.25,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.3,"width":1},"move":{"enable":true,"speed":3,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
-</script>
+    <header>
+        <div class="container">
+            <!-- Profile picture -->
+            <img src="path_to_your_profile_picture" alt="Profile Picture">
+            <h1>Ligin Thomas CK</h1>
+            <!-- Bio -->
+            <p>Bio information goes here</p>
+        </div>
+    </header>
 
-    <!------ Moon parallax effect ------>
-    <section id="Moon-parallax-effect">
-        <section id="section">
-            <img src="moon/bg.jpg" id="bg">
-            <img src="moon/moon.png" id="moon">
-            <img src="moon/mountain.png" id="mountain">
-            <img src="moon/road.png" id="road">
-            <h2 id="text">Heii.. Bie.. !!</h2>
-        </section>
+    <main>
+        <div class="container">
+            <!-- Education info -->
+            <section id="education">
+                <h2>Education</h2>
+                <!-- Add your education information here -->
+            </section>
 
+            <!-- Project cards -->
+            <section id="projects">
+                <h2>Projects</h2>
+                <!-- Add your project cards here -->
+            </section>
 
-        <!------ Cloud effect parallax ------>
-        <section id="Cloud-effect-parallax" class="section white">
-            <h2>Oops!!.. <br> Site Under Maintenance..!!</h2>
-            <h2>😉😉</h2>
-            <div class="banner">
-                <div class="clouds">
-                    <img src="cloud/cloud1.png" style="--i:1;">
-                    <img src="cloud/cloud2.png" style="--i:2;">
-                    <img src="cloud/cloud3.png" style="--i:3;">
-                    <img src="cloud/cloud4.png" style="--i:4;">
-                    <img src="cloud/cloud5.png" style="--i:5;">
-                </div>
-            </div>
-        </section>
+            <!-- Social links -->
+            <section id="social-links">
+                <h2>Social Links</h2>
+                <!-- Add your social links here -->
+            </section>
 
-    </section>
+            <!-- Tweets -->
+            <section id="tweets">
+                <h2>Tweets</h2>
+                <!-- Add your tweets here -->
+            </section>
 
-    <!------ Moon parallax effect ------>
-    <script type="text/javascript">
-        let bg = document.getElementById("bg");
-        let moon = document.getElementById("moon");
-        let mountain = document.getElementById("mountain");
-        let road = document.getElementById("road");
-        let text = document.getElementById("text");
+            <!-- Blog -->
+            <section id="blog">
+                <h2>Blog</h2>
+                <!-- Add your blog posts here -->
+            </section>
 
-        window.addEventListener('scroll', function() {
-            var value = window.scrollY;
+            <!-- Contact info -->
+            <section id="contact">
+                <h2>Contact</h2>
+                <!-- Add your contact information here -->
+            </section>
 
-            bg.style.top = value * 0.5 + 'px';
-            moon.style.left = -value * 0.5 + 'px';
-            mountain.style.top = -value * 0.15 + 'px';
-            road.style.top = value * 0.15 + 'px';
-            text.style.top = value * 1 + 'px';
-        })
-    </script>
+            <!-- Skills -->
+            <section id="skills">
+                <h2>Skills</h2>
+                <!-- Add your skills here -->
+            </section>
+
+            <!-- Instagram posts -->
+            <section id="instagram">
+                <h2>Instagram</h2>
+                <!-- Add your Instagram posts here -->
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
+</html>
