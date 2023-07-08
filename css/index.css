@@ -40,6 +40,115 @@ input::-webkit-inner-spin-button {
 }
 
 
+/* cards */
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 3%;
+}
+
+.carousel {
+    display: flex;
+    width: fit-content;
+    animation: slide 20s infinite linear;
+}
+
+.card {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    margin-right: 20px;
+    /* Adjust spacing between cards */
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card .front,
+.card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card .front {
+    transform: rotateY(0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .back {
+    transform: rotateY(180deg);
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.certification-description {
+    display: none;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.card:hover .back .certification-description {
+    display: block;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    45% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    70% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-100%);
+    }
+    95% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* card end */
+
+
 /* Firefox */
 
 input[type=number] {
@@ -582,8 +691,8 @@ body {
 }
 
 .about-img {
-    width: 450px;
-    height: auto;
+    width: 500px;
+    height: 600px;
     padding: 30px;
     padding-top: 10px;
     border-radius: 40px;
